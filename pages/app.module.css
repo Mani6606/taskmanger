@@ -1,0 +1,31 @@
+/* styles.module.css */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00e3f3; /* Sky blue background color */
+  padding: 10px; /* Add padding for spacing */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.header {
+  text-decoration: none;
+  color: #000000; /* White text color for the header */
+  margin: 0; /* Remove default margin for h1 */
+}
+
+.buttonscontainer {
+  display: flex;
+  gap: 10px; /* Add spacing between buttons */
+}
+
+.linkbutton {
+  text-decoration: none;
+  border: none;
+  background-color: #ffffff; /* Sky blue background color for buttons */
+  color: #000000; /* White text color for buttons */
+  padding: 10px 20px;
+  border-radius: 5px; /* Add border radius to buttons */
+  cursor: pointer;
+}

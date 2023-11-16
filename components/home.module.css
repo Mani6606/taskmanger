@@ -1,0 +1,222 @@
+.chatContainer {
+  height: 532px;
+  overflow-y: scroll;
+  /* margin-bottom: 4%; */
+  width: 100%;
+
+  margin: 1rem auto;
+  padding: 0px;
+  display: grid;
+}
+
+.loading {
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  font-size: 200%;
+  margin: 20%;
+  margin-left: 45%;
+  position: absolute;
+  color: #000000;
+}
+.header {
+  width: 100%;
+  background-color: #003c4e;
+  padding: 10px;
+  border-radius: 5px;
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+}
+.header button {
+  background: linear-gradient(to right, #a2c2c2e8, #000000);
+  padding: 0.5%;
+  margin-right: 2%;
+  border: none;
+  color: white;
+}
+.header button:hover {
+  background: linear-gradient(to right, rgb(32, 35, 36), #01fdfd);
+  color: #fcf5f5;
+}
+
+.body {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  /* background-color: #01fdfd; */
+  flex-direction: column;
+  /* height: 8vh; */
+}
+
+.adder {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  /* border-radius: 20px; */
+  background-color: #003c4e;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.adder button {
+  background-color: #003c4e;
+
+  border: none;
+  width: 45px;
+  height: 45px;
+  color: white;
+  margin-left: 1px;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adder button:hover {
+  background-color: #003c4e;
+  /* background-color: #000000; */
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+.adder input {
+  border: none;
+  border-radius: 50px;
+  background-color: #003c4e;
+
+  color: #ffffff; /* Text color */
+  padding: 10px 20px; /* Adjust padding for appropriate size */
+  font-size: 16px; /* Font size */
+  width: 90%; /* Set width to your desired size */
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); Add a subtle shadow */
+  outline: none; /* Remove the default focus outline */
+}
+
+.adder input::placeholder {
+  color: #fff; /* Placeholder text color */
+}
+
+.body h1 {
+  flex: 1; /* Allow this section to take up remaining vertical space */
+  text-align: center; /* Center the text horizontally */
+}
+.containerdelete {
+  text-align: center; /* Center-align the heading */
+  width: 100%;
+  margin-top: 5%;
+  opacity: 0.5;
+  position: relative;
+}
+
+.container {
+  text-align: center; /* Center-align the heading */
+  width: 100%;
+  margin-top: 5%;
+
+}
+.messagelist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+  width:100%;
+  padding-bottom: 0px;
+}
+
+.messageitem {
+  background-color: #5dc0003b;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgb(6, 53, 27);
+  width: 90%;
+  display:flex;
+
+  color: #000000;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.dad button {
+  margin-right: 2%;
+  padding: 3%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dad button:hover {
+  background-color: rgb(238, 59, 59);
+}
+.messageitem:hover {
+  background-color: rgb(34, 70, 34);
+  color: white;
+  cursor: pointer;
+  /* box-shadow: 10px 2px 2px 2px; */
+}  
+@media screen and (max-width: 768px) {
+  /* Define styles for smaller screens here */
+  .header {
+    flex-direction: column; /* Stack header content in smaller screens */
+  }
+
+  .adder {
+    padding: 5px; /* Adjust padding for mobile devices */
+    margin-top: 20px;
+  }
+
+  .adder button {
+    width: 35px;
+    height: 35px;
+    font-size: 2rem;
+  }
+
+  .adder input {
+    font-size: 14px;
+  }
+  .chatContainer {
+    height: 1000px;
+    margin-bottom: 0;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .loading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+  }
+}
+.dad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.date{
+  /* background-color: #01fdfd; */
+  font-size:0.8rem;
+  width:150px;
+  padding-right:10px;
+  margin:0px;
+}

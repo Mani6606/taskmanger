@@ -1,0 +1,180 @@
+/* .visiblebutton {
+  z-index: -2;
+} */
+/* signup.module.css */
+.error {
+  color: #ff0000; /* Red text color for error messages */
+  font-size: 14px; /* Font size for error messages */
+  margin-top: 5px; /* Spacing between the input field and error message */
+}
+
+.header h1 {
+  background-color: #00e1ff;
+  width: 100%;
+  height: 25%;
+  text-align: center;
+  margin: 0%;
+}
+/* Container styles */
+.signupcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  height: 100%;
+  background-color: hsl(0, 0%, 94%);
+}
+
+/* Form styles */
+.signupform {
+  background-color: #fff;
+  padding: 3%;
+  border: 1px solid #ccc;
+  border-radius: 6%;
+  width: 25%;
+}
+
+.signupform h1 {
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+/* Label styles */
+.signupform label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+/* Input styles */
+.signupform input {
+  padding: 10px;
+  margin-bottom: 5%;
+  background-color: #ffffff;
+  font-size: 16px;
+  width: 90%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+/* Button styles */
+.signupform .signupbutton {
+  background-color: #00e1ff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  margin-top: 10%;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Hover effect for the button */
+.signupform .signupbutton:hover {
+  background-color: #0056b3;
+}
+.register {
+  padding: 20px;
+}
+.dimmed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 1000; /* A high z-index to ensure it's on top of everything */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.passwordinput {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.visiblebutton {
+  padding: 8px;
+  border: none;
+  margin-top: -20px;
+  background-color: transparent;
+  margin-left: -30px;
+}
+@media (max-width: 768px) {
+  .signupcontainer {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .signupform {
+    margin-top: 40%;
+    margin-bottom: 40%;
+    width: 80%;
+    height: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    width: 100%;
+  }
+}
+/* ===================================================================================================================== */
+@keyframes dropIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.signupform {
+  /* Existing styles... */
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: dropIn 1s ease forwards; /* Apply the animation to the form */
+}
+
+@keyframes alignElements {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.signupform.animate {
+  animation: dropIn 1s ease forwards, alignElements 0.5s ease 1s forwards;
+}
+@keyframes dropInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.signupform .animate.formElement {
+  animation: dropInFromBottom 0.5s ease forwards;
+}
+.signupform .formElement {
+  transform: translateY(100%);
+  opacity: 0;
+}
